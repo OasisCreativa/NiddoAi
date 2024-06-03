@@ -16,7 +16,7 @@ import {
 } from "ai";
 import { UpstashRedisCache } from "langchain/cache/upstash_redis";
 import { Redis } from "@upstash/redis";
-
+export const maxDuration = 300;
 export async function POST(req: Request) {
   try {
     const body = await req.json();
